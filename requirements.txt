@@ -1,1 +1,1 @@
-Required libraries
+sympy>=1.13.3
