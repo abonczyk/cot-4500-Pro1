@@ -3,7 +3,7 @@ p = 0
 right = 7
 left = -4
 
-#number 1
+#Method 1
 
 def f(x):
     return x**3 - x**2 + 4
@@ -17,10 +17,10 @@ while abs(right - left) > 10**(-4) and i < 50:
     else:
         left = p
     
-print("This part of the program finds the root and number of iterations of x^3 + 4x^2 - 10 using the Approximation Algorithm, given a = -4 and b = 7.\n")
+print("This part of the program finds the root and number of iterations of x^3 + 4x^2 - 10 using the Approximation Algorithm, given a = -4 and b = 7.")
 print(f"Found root {p} after {i} iterations\n")
 
-#number 2
+#Method 2
 
 while abs(right - left) > 10**(-4) and i < 10:
 	i += 1
@@ -31,12 +31,12 @@ while abs(right - left) > 10**(-4) and i < 10:
 	else:
 		left = p
 
-print("This part of the program finds the root and number of iterations using the Bisection Method.\n")
+print("This part of the program finds the root and number of iterations using the Bisection Method.")
 print(f"Found root {p} after {i} iterations\n") 
 
 
 
-#number 3
+#Method 3
 def f(x):
   return x**2-4
 
@@ -45,6 +45,7 @@ p = 0
 p0 = 1
 i = 0
 
+'''
 print("This part of the program finds the root and number of iterations using the Fixed-Point Iteration Method.\n")
 while (i <= 100):
 	p = f(p0)
@@ -54,9 +55,9 @@ while (i <= 100):
 	i += 1
 	p0 = p
 print("Failure")
+'''
 
-
-#number 4
+#Method 4
 
 p_prev = 1
 p_next = 0
@@ -69,7 +70,7 @@ f = x**3 - x**2 + 4
 
 f_prime = sp.diff(f, x)
 
-print("This part of the program finds the root and number of iterations of x^3 + 4x^2 - 10 using the Newton-Raphson Method.\n")
+print("This part of the program finds the root and number of iterations of x^3 + 4x^2 - 10 using the Newton-Raphson Method.")
 
 while (i <= 10):
     if float(f_prime.subs(x, p_prev)) != 0:
